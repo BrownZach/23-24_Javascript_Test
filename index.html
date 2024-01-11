@@ -12,7 +12,7 @@
 	<body>
 		<div class="header">
 			<div class="container">
-				<h1 class="header-heading">Put Student Names Here</h1>
+				<h1 class="header-heading">Zachary Brown</h1>
 			</div>
 		</div>
 		<div class="nav-bar">
@@ -25,6 +25,7 @@
 					<li><a href="#">Nav Link 5</a></li>
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
+					<li onclick="task3changeText()">Click This!</li>
 					<!-- Buttons for Task 3 and Task 4 should be placed here -->
 					
 				</ul>
@@ -38,7 +39,7 @@
 
 					<!-- Paragraphs -->
 					<h3>Basic Directions</h3>
-					<p>This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
+					<p id="directionsTask3">This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
 					<hr>
 
 					<h3>Tasks</h3>
@@ -62,15 +63,16 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onClick = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
+					<img src="assets/img/compIcon.png" onmouseover="task1btnAppear()" id="imageTask1"><br />
+					<button style="display:none" onclick="task1btnClick()" id="buttonTask1">Click Me</button>
 					<hr>
 										
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
-					
-					
-					<table class="table table-striped">
+					<button value="Red" onclick="task2redbtnClick()" id="redButtonTask2">Red</button>
+					<button value="Green" onclick="task2greenbtnClick()" id="greenButtonTask2">Green</button>
+					<button value="Blue" onclick="task2bluebtnClick()" id="blueButtonTask2">Blue</button>
+					<table class="table table-striped" id="task2Table">
 						<thead>
 							<tr>
 								<th>#</th>

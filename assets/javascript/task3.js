@@ -1,2 +1,6 @@
 /* Put code for the task below */
-function task3changetext()
+const display = document.getElementById("directionsTask3");
+function task3changeText(){
+    alert(display);
+    display.value = "I Clicked It!";
+}
